@@ -1,0 +1,15 @@
+require_relative './config/environment'
+
+
+puts "Welcome to Cats, Dogs, and Owner"
+
+def relad! 
+    load './lib/cat.rb'
+    load './lib/dog.rb'
+    load './lib/owner.rb'
+end
+
+desc "A Console"
+task :console do 
+    Pry.start
+end
