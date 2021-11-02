@@ -26,7 +26,7 @@ describe Owner do
       it "can't change its species" do
         expect { @owner.species = "hamster" }.to raise_error NoMethodError
       end
-    endra
+    end
 
     describe "#say_species " do
       it "can say its species" do
